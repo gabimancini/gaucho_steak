@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@font-face {
+  font-family: "bernier";
+  src:
+    url("fonts/Bernier/bernier-Regular.otf"),
+    url("fonts/Bernier/bernier-Regular.ttf")
+}
