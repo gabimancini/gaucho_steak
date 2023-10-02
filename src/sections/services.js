@@ -12,7 +12,7 @@ const Services = () => {
     return (
         <section id="services">
             <Container>
-               <div className="flex items-center mb-[13px] self-center"><Heading level="h2" children="our services" /> <FaUtensils className="ml-[10px]" /></div> 
+               <div className="flex items-center mb-[13px] self-start"><Heading level="h2" children="our services" /> <FaUtensils className="ml-[10px]" /></div> 
                 <Paragraph className="font-narrow font-regular mb-[46px] text-[16px] text-brown" children="We offer a different gastronomic experience. Ideal for all types of events. Customize your service."/>
                 <div className="flex flex-col  px-[20px] gap-[26px]">
                     {

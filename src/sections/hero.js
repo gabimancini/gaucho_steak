@@ -5,7 +5,7 @@ import Paragraph from "../elements/paragraph";
 
 const Hero = () => {
     return (
-        <section id="hero" className="bg-hero h-[308px]">
+        <section id="hero" className="bg-cover bg-hero bg-no-repeat h-[308px]">
             <Container>
                 <Heading level="h1" children="the gaucho bbq" />
                 <Paragraph type="hero_sub" children="Smoke and Grill" />
