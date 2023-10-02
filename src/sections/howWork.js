@@ -1,22 +1,19 @@
 import Container from "../elements/container";
-import Heading from "../elements/heading";
-import WorkCard from "../components/workCard";
-import { FaUtensils } from "react-icons/fa";
+import SectionTitle from "../components/sectionTitle";
+import WorkCard from "../components/workCard"; 
 // Data
 import workData from "../data/workData";
 const HowWork = () => {
     return (
         <section id="how_work">
             <Container>
-            <div className="flex items-center mb-[13px] self-start"><Heading level="h2" children="How does it work" /> <FaUtensils className="ml-[10px]" /></div> 
-
+            <SectionTitle children="How does it work" />
             {
                 workData.map((work,index)=>{
                     return(
                         <WorkCard children={work.icon} title={work.title} description={work.description}/>
                     )
                 })
-               
             }
             </Container>
         </section>

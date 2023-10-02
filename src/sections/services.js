@@ -1,19 +1,18 @@
 import Card from "../components/card";
-import Container from "../elements/container";
-import Heading from "../elements/heading";
+import Container from "../elements/container"; 
 import Paragraph from "../elements/paragraph";
+import SectionTitle from "../components/sectionTitle";
 // Data
 import servicesData from "../data/servicesData";
 // Icon
-import { FaCheckCircle } from "react-icons/fa";
-import { FaUtensils } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa"; 
 const Services = () => {
 
     return (
         <section id="services">
             <Container>
-               <div className="flex items-center mb-[13px] self-start"><Heading level="h2" children="our services" /> <FaUtensils className="ml-[10px]" /></div> 
-                <Paragraph className="font-narrow font-regular mb-[46px] text-[16px] text-brown" children="We offer a different gastronomic experience. Ideal for all types of events. Customize your service."/>
+            <SectionTitle children="our services"  />
+                 <Paragraph className="font-narrow font-regular mb-[46px] text-[16px] text-brown" children="We offer a different gastronomic experience. Ideal for all types of events. Customize your service."/>
                 <div className="flex flex-col  px-[20px] gap-[26px]">
                     {
                         servicesData.map((service, index) => {

@@ -1,5 +1,4 @@
 import { clsx } from "clsx";
-import { BsEnvelopeFill } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 const Button = (props) => {
     const { icon, size, className, children, ...rest } = props;
@@ -12,7 +11,7 @@ const Button = (props) => {
 
     return (
         <button className={classes} size={size} {...rest}>
-            {icon === "envelope" && <BsEnvelopeFill className="mr-2.5" />}
+          
             {icon === "send" && <FaTelegramPlane className="mr-2.5" />}
             {children}
         </button>
