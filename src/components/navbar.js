@@ -1,26 +1,36 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Container from "../elements/container";
 import { FaBars } from "react-icons/fa";
 import { BsXLg } from "react-icons/bs";
 import Logo from '../assets/logo.png';
-import Link from "../elements/link";
+import Links from "../elements/links";
 import SocialIcons from "./socialIcons";
 export const navLinks = [
     {
         id: "home",
+        path: "/#hero",
         title: "Home",
+        hash: true,
     },
     {
         id: "About Us",
+        path: "/about",
         title: "About Us",
+        hash: false,
     },
     {
         id: "How it works",
+        path: '/#how_work',
         title: "How it works",
+        hash: true,
     },
     {
         id: "Our Services",
+        path: '/#services',
         title: "Our Services",
+        hash: true,
     },
 ];
 
@@ -41,17 +51,20 @@ const Navbar = () => {
                     >
                         <ul className="px-[40px] py-[20px] list-none flex justify-end items-start flex-1 flex-col">
                             {navLinks.map((nav, index) => (
+
                                 <li
                                     key={nav.id}
-                                    className={active === nav.title ? "text-red" : "text-brown"}
-
                                     onClick={() => setActive(nav.title)}
+                                    className="my-[20px] text-[20px] text-brown text-narrow font-bold inline-block"
                                 >
-                                    <Link size=" " type="nav" href={`#${nav.id}`} className={active === nav.title ? "text-red" : "text-brown"}>{nav.title}</Link>
+                                    {nav.hash === false ?
+                                        <Link to={nav.path} size=" " type="nav" className={active === nav.title ? "text-red no" : "text-brown"}>{nav.title}</Link>
+                                        : <HashLink smooth to={nav.path} size=" " type="nav" className={active === nav.title ? "text-red hash" : "text-brown hash"}>{nav.title}</HashLink>
+                                    }
                                 </li>
                             ))}
-                            <SocialIcons className="mt-[20px]" type='nav'  />
-                            <Link className="self-center mt-[46px]" icon="envelope" size="medium" type="button" children="Contact us" />
+                            <SocialIcons className="mt-[20px]" type='nav' />
+                            <Link to="/contactForm" className="self-center mt-[46px] bg-red text-white rounded-lg flex justify-center items-center font-narrow font-bold text-[15px] mt-[20px] px-14 py-3 w-[198px]" icon="envelope" size="medium" type="button" children="Contact us" />
 
                         </ul>
                     </div>
@@ -81,8 +94,8 @@ const Navbar = () => {
 
 
                     </div>
-                    <a className="md:self=start"><img className="width-[98px]" src={Logo} alt="Logo" /></a>
-                    
+                    <Link to="/" className="md:self=start"><img className="width-[98px]" src={Logo} alt="Logo" /></Link>
+
                 </nav>
             </Container>
         </header>

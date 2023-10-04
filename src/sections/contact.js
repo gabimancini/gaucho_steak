@@ -1,6 +1,6 @@
 import Container from "../elements/container";
 import Heading from "../elements/heading";
-import Link from "../elements/link";
+import Link from "../elements/links";
 const Contact = () => {
     return (
         <section id="contact">

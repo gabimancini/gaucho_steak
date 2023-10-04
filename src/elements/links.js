@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { BsEnvelopeFill } from "react-icons/bs";
-const Link = (props) => {
+import { Link } from "react-router-dom";
+const Links = (props) => {
     const {icon,link, className, type, size, children, ...rest } = props;
     const classes = clsx(
         type === "button" && "bg-red text-white rounded-lg flex justify-center items-center font-narrow font-bold text-[15px]",
@@ -17,4 +18,4 @@ const Link = (props) => {
         </a>
     )
 }
-export default Link;
+export default Links;

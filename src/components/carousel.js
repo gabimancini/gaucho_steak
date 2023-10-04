@@ -6,17 +6,17 @@ export default function CarouselDefault() {
         <Carousel className="rounded-xl mt-[20px] mb-[20px]">
             <img
                 src={FirstImg}
-                alt="image 1"
+                alt="  1"
                 className="h-full w-full object-cover"
             />
             <img
                 src={FirstImg}
-                alt="image 2"
+                alt="  2"
                 className="h-full w-full object-cover"
             />
             <img
                 src={FirstImg} 
-                alt="image 3"
+                alt="  3"
                 className="h-full w-full object-cover"
             />
         </Carousel>

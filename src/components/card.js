@@ -1,5 +1,5 @@
 import Heading from "../elements/heading";
-import Link from "../elements/link";
+import Link from "../elements/links";
 import Paragraph from "../elements/paragraph";
 import List from "../elements/list";
 const Card = (props) => {

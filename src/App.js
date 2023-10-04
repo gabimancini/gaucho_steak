@@ -1,12 +1,12 @@
 
 import './App.css';
-import Home from './pages/home';
 import Navbar from './components/navbar';
+import RoutePath from './routes/routes'; 
 function App() {
   return (
     <div className="bg-yellow">
-      <Navbar />
-      <Home />
+      <Navbar /> 
+      <RoutePath /> 
     </div>
   );
 }
