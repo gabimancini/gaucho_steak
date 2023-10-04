@@ -12,10 +12,10 @@ const Links = (props) => {
         className
     )
     return (
-        <a className={classes} type={type} size={size} {...rest}>
+        <Link className={classes} type={type} size={size} {...rest}>
           {icon === "envelope" && <BsEnvelopeFill className="mr-2.5" />}
         {children}
-        </a>
+        </Link>
     )
 }
 export default Links;
