@@ -46,8 +46,8 @@ const Navbar = () => {
 
                     {/* Sidebar */}
                     <div
-                        className={`${!toggle ? "hidden" : "flex"
-                            } bg-white absolute top-[58px] right-0  w-[100%] sidebar`}
+                        className={`${!toggle ? "  translate-x-[-100%] transition-all duration-1000 " : "translate-x-[0] transition-all duration-1000 "
+                            } bg-white absolute w-[100%]  top-[58px] right-0 sidebar`}
                     >
                         <ul className="px-[40px] py-[20px] list-none flex justify-end items-start flex-1 flex-col">
                             {navLinks.map((nav, index) => (
