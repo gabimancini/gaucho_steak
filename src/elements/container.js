@@ -1,6 +1,12 @@
-const Container = ({children})=>{
+import clsx from "clsx";
+const Container = (props)=>{
+    const {children, className} = props;
+    const classes = clsx(
+        "px-[24px] py-[10px] flex flex-col justify-center items-center",
+        className
+    )
     return(
-        <div className="px-[24px] py-[10px] flex flex-col justify-center items-center">{children}</div>
+        <div className={classes}>{children}</div>
     )
 }
 export default Container

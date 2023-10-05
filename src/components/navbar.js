@@ -13,15 +13,13 @@ const Navbar = () => {
 
     return (
         <header>
-            <Container >
-                <nav className="w-full flex justify-between items-center navbar"
+            <Container className="h-[64px]" >
+                <nav className="fixed  h-[64px] bg-yellow px-[20px] w-full flex justify-between items-center navbar z-[999]"
                   onClick={() => setToggle(!toggle)}>
-                    {/* Logo */}
-
                     {/* Sidebar */}
                     <div
                         className={`${!toggle ? "  translate-x-[-100%] transition-all duration-1000 " : "translate-x-[0] transition-all duration-1000 "
-                            } bg-white absolute w-[100%]  top-[58px] right-0 sidebar`}
+                            } bg-white absolute w-[100%]  top-[58px] right-0 sidebar z-[999]`}
                     >
                         <ul className="px-[40px] py-[20px] pb-[40px] list-none flex justify-end items-start flex-1 flex-col">
                           <NavLinks />
@@ -55,6 +53,7 @@ const Navbar = () => {
 
 
                     </div>
+                     {/* Logo */}
                     <Links to="/" className="md:self=start"><img className="width-[98px]" src={Logo} alt="Logo" /></Links>
 
                 </nav>
