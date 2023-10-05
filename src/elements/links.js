@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { BsEnvelopeFill, BsTelephoneFill } from "react-icons/bs";
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const Links = (props) => {
     const {icon,link, className, type, size, children, ...rest } = props;

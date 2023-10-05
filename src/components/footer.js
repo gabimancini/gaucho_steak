@@ -10,7 +10,7 @@ const Footer = () => {
             <Container>
                 <div className="self-start">
                     <Heading className="text-[26px] text-white tracking-[3.9px]" level="h2" children="the gaucho bbq" />
-                    <Paragraph className="font-narrow mb-[24px] text-[14px]" children="Argentine style barbecue. A good option for all types of events." />
+                    <Paragraph className="font-narrow mb-[24px] text-[14px] text-white" children="Argentine style barbecue. A good option for all types of events." />
                 </div>
                 <div className="self-stretch flex justify-between">
                     <div className="w-[40%]">
@@ -29,7 +29,7 @@ const Footer = () => {
            
             </Container>
             <div className="border-t-[1px] border-t-white py-[10px] leading-7">
-                    <Paragraph className="text-[14px] text-center" children="© 2023 The Gaucho BBQ LLC | All rights reserved." />
+                    <Paragraph className="text-[14px] text-center text-white" children="© 2023 The Gaucho BBQ LLC | All rights reserved." />
                     <Link className="text-[14px] block text-center" >Privacy Policy </Link>
                 </div>
         </footer>

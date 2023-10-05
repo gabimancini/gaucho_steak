@@ -1,6 +1,6 @@
 import Container from "../elements/container";
 import Heading from "../elements/heading";
-import Link from "../elements/links";
+import { HashLink } from "react-router-hash-link";
 import Paragraph from "../elements/paragraph";
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
                 <Heading level="h1" children="the gaucho bbq" />
                 <Paragraph type="hero_sub" children="Smoke and Grill" />
                 <Paragraph type="hero_p" children="Argentinian grilled barbecue at home, events and family gatherings." />
-                <Link children="Book Now" type ="button" size="medium"/>
+                <HashLink className="bg-red text-white rounded-lg flex justify-center items-center font-narrow font-bold text-[15px] px-6 py-2.5" smooth  to="/#services"  >Let's start</HashLink>
             </Container>
         </section>
     )

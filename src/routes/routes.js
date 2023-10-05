@@ -6,8 +6,8 @@ const RoutePath = ()=> {
     return ( 
         <Routes>
           <Route path="/" element={<Home />}/>
-            <Route  path="/about" exact element={<About/>} />
-            <Route  path="/contact" exact element={<ContactForm/>} />
+            <Route  path="/about" exact element={<About />} />
+            <Route  path="/contact" exact element={<ContactForm />} />
             {/*<Route path="*" element={<NoPage />} />*/}
         </Routes> 
     );

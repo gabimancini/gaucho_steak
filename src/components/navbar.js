@@ -24,7 +24,7 @@ const Navbar = () => {
                         <ul className="px-[40px] py-[20px] pb-[40px] list-none flex justify-end items-start flex-1 flex-col">
                           <NavLinks type='nav' />
                             <SocialIcons className="mt-[20px]" type='nav' />
-                            <Links to="/contactForm" className="self-center mt-[46px]" icon="envelope" size="medium" type="button" children="Contact us" />
+                            <Links to="/contact" className="self-center mt-[46px]" icon="envelope" size="medium" type="button" children="Contact us" />
                         </ul>
                     </div>
 
