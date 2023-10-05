@@ -22,7 +22,7 @@ const Navbar = () => {
                             } bg-white absolute w-[100%]  top-[58px] right-0 sidebar z-[999]`}
                     >
                         <ul className="px-[40px] py-[20px] pb-[40px] list-none flex justify-end items-start flex-1 flex-col">
-                          <NavLinks />
+                          <NavLinks type='nav' />
                             <SocialIcons className="mt-[20px]" type='nav' />
                             <Links to="/contactForm" className="self-center mt-[46px]" icon="envelope" size="medium" type="button" children="Contact us" />
                         </ul>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
                         <button
                             onClick={() => setToggle(!toggle)}
-                        >{toggle ? <BsXLg className="text-[24px] text-red" /> : <FaBars className="text-[24px] text-red" />}</button>
+                        >{toggle ? <BsXLg className="    stroke-1 text-[24px] text-red" /> : <FaBars className="text-[24px] text-red" />}</button>
 
 
                     </div>

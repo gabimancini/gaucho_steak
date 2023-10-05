@@ -20,7 +20,7 @@ module.exports = withMT({
     },
     fontFamily: {
       'narrow': 'PT Sans Narrow, bernier',
-      'bernier': 'bernier, PT Sans Narro'
+      'bernier': 'bernier, PT Sans Narrow'
     },
     extend: {},
   },

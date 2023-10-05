@@ -29,12 +29,11 @@ export const navLinks = [
     },
 ];
 const NavLinks = (props ) => {
-    const { className } = props
+    const { className, type } = props
     const [active, setActive] = useState("Home");
-    const classes = clsx(
-        "my-[20px] text-[20px] text-brown font-narrow font-bold inline-block",
-        active === true ? "text-red " : "text-brown",
-        className
+    const classes = clsx( 
+        type === "nav" && 'my-[20px] text-[20px] text-brown font-narrow font-bold inline-block',
+        type === "footer" && 'font-regular mb-[15px] inline-block text-[16px] font-narrow text-white',
     )
     return (
         <>
@@ -45,8 +44,8 @@ const NavLinks = (props ) => {
                     onClick={() => setActive(nav.title)} 
                 >
                     {nav.hash === false ?
-                        <Link to={nav.path} size=" " type="nav" className={classes}>{nav.title}</Link>
-                        : <HashLink smooth to={nav.path} size=" " type="nav" className={classes}>{nav.title}</HashLink>
+                        <Link to={nav.path} size=" " className={classes} type={type}  >{nav.title}</Link>
+                        : <HashLink smooth to={nav.path} size=" " className={classes} type={type} >{nav.title}</HashLink>
                     }
                 </li>
             ))}
