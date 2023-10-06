@@ -8,6 +8,7 @@ const HowWork = () => {
         <section id="how_work">
             <Container>
             <SectionTitle children="How does it work" />
+            <div className="md:flex">
             {
                 workData.map((work,index)=>{
                     return(
@@ -15,6 +16,7 @@ const HowWork = () => {
                     )
                 })
             }
+            </div>
             </Container>
         </section>
     )

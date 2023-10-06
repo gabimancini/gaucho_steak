@@ -3,7 +3,7 @@ import FirstImg from '../assets/gallery_1_mobile.png'
 
 export default function CarouselDefault() {
     return (
-        <Carousel className="rounded-xl mt-[20px] mb-[20px]">
+        <Carousel className="rounded-xl mt-[20px] mb-[20px]  md:w-[50%]">
             <img
                 src={FirstImg}
                 alt="  1"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../elements/button";
 import Input from "../elements/input";
+import { Link } from "react-router-dom";
 
 const Form = () => {
     const [form, setForm] = useState({
@@ -87,10 +88,9 @@ const Form = () => {
                 onChange={handleOnChangeArea}
                 value={areaValue.message}>
             </textarea>
-            <textarea
-
-            ></textarea>
             <Button type="submit" children="Send message" icon="send" size="x-large" />
+            <Link className="text-[14px] block  text-black text-center underline underline-offset-4 " >Privacy Policy </Link>
+
         </form>
     );
 };

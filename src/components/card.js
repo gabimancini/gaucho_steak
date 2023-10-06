@@ -6,7 +6,7 @@ const Card = (props) => {
     let { category, price, description, item, src } = props;
 
     return (
-        <div className="bg-white p-[40px] rounded-[8px] font-narrow ">
+        <div className="bg-white p-[40px] rounded-[8px] font-narrow md:flex-row">
             <Heading level="h2" children={category} className="text-red" />
             <div className="flex items-center">
                 <span className="text-[37px]">$</span>

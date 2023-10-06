@@ -13,7 +13,7 @@ const Services = () => {
             <Container>
             <SectionTitle children="our services"  />
                  <Paragraph className="font-narrow font-regular mb-[46px] text-[16px] text-brown" children="We offer a different gastronomic experience. Ideal for all types of events. Customize your service."/>
-                <div className="flex flex-col  px-[20px] gap-[26px]">
+                <div className="flex flex-col md:flex-row px-[20px] gap-[26px]">
                     {
                         servicesData.map((service, index) => {
                             let items = service.list;
