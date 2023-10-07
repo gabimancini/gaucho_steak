@@ -8,3 +8,25 @@
     url("fonts/Bernier/bernier-Regular.otf"),
     url("fonts/Bernier/bernier-Regular.ttf")
 }
+ 
+details summary { 
+  list-style: none;
+  transition: margin 150ms ease-out; 
+}
+
+details[open] summary {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+details summary::before {
+  content:url(assets/BsPlus.svg);
+  position: absolute;
+  right: 0;
+}
+ 
+details[open] summary::before {
+  content:url(assets/BsDash.png);
+  position: absolute;
+  right: 0;
+}
