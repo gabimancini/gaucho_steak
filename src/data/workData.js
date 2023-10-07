@@ -13,7 +13,7 @@ const workData = [
     {
         icon:<FaUserClock className="text-[40px] pr-[10px]" />,
         title: "Wait for us",
-        description: "We offer a different gastronomic experience. Ideal for all types of events.  Remember: all our services are customizable, contact us and we will adjust to your needs",
-    },
+        description: "Great! Once the service is confirmed and reserved, all that remains is to wait for the grillers on the day and time selected.",
+    }
 ]
 export default workData;

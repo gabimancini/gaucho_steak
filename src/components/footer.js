@@ -30,7 +30,7 @@ const Footer = () => {
             </Container>
             <div className="border-t-[1px] border-t-white py-[10px] leading-7">
                     <Paragraph className="text-[14px] text-center text-white" children="© 2023 The Gaucho BBQ LLC | All rights reserved." />
-                    <Link className="text-[14px] block text-center" >Privacy Policy </Link>
+                    <Link to="/policy" className="text-[14px] block text-center" >Privacy Policy </Link>
                 </div>
         </footer>
     )

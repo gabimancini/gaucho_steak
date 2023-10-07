@@ -126,7 +126,7 @@ const Form = () => {
                 </div>
             }
             <Button type="submit" children="Send message" icon="send" size="x-large" />
-            <Link className="text-[14px] block  text-black text-center underline underline-offset-4 " >Privacy Policy </Link>
+            <Link to="/policy" className="text-[14px] block  text-black text-center underline underline-offset-4 " >Privacy Policy </Link>
 
         </form>
     );

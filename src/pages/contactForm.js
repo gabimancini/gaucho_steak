@@ -10,8 +10,8 @@ const ContactForm = () => {
     return (
         <section id="contact_form">
             <Container>
-                <SectionTitle className="self-center" children="contact us" />
-                <Paragraph className="text-center" children="Any question or remarks? Just write us a message!" />
+                <SectionTitle className="self-center mb-[15px]" children="contact us" />
+                <Paragraph className="text-center max-w-[201px] m-auto text-[17px] font-narrow mb-[22px]" children="Any question or remarks? Just write us a message!" />
                 <Form />
             </Container>
             <div className="bg-red py-[34px] mt-[50px] text-white">
