@@ -7,6 +7,7 @@ const Paragraph = (props)=>{
         type === 'hero_p' && 'font-bold font-narrow leading-[29px] mb-[16px] text-[26px] text-center text-white tracking-[1.3px]',
         type === 'card' && 'font-narrow text-[15px] leading-[22.5px]',
         type === 'policy' && 'font-narrow self-start',
+        type === 'faq' && 'font-narrow self-start',
         className
     )
     return(

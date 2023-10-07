@@ -27,6 +27,12 @@ export const navLinks = [
         title: "Our Services",
         hash: true,
     },
+    {
+        id: "faq",
+        path: '/faq',
+        title: "FAQ",
+        hash: false,
+    },
 ];
 const NavLinks = (props ) => {
     const { className, type } = props
