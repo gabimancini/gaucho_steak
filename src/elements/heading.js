@@ -2,7 +2,7 @@ import clsx from "clsx";
 const Heading = (props)=>{
     const {className, level, children, ...rest} = props;
     const classes = clsx(
-        level === 'h1' && 'font-bernier font-regular text-[38px] text-white',
+        level === 'h1' && 'font-bernier font-regular text-[38px] text-yellow md:text-[72px]',
         level === 'h2' && 'font-bernier font-regular text-[24px] text-brown',
         level === 'h3' && 'font-narrow font-bold text-[18px] text-black',
         level === 'h4' && 'font-narrow font-bold text-[16px] text-white',

@@ -6,6 +6,7 @@ module.exports = withMT({
   theme: {
     backgroundImage: {
       'hero': "url('/src/assets/hero.png')",
+      'hero_desktop': "url('/src/assets/hero_desktop.png')",
     },
     colors: {
       'black': '#000',

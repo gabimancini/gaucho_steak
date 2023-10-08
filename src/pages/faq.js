@@ -3,8 +3,7 @@ import Container from "../elements/container";
 import FaqAccordion from "../components/faqAccordion";
 import Paragraph from "../elements/paragraph";
 import SectionTitle from "../components/sectionTitle";
-// Data
-import faqData from "../data/faqData";
+
 const Faq = () => {
     return (
         <div className="pb-[40px]">
