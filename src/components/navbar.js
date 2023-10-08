@@ -13,10 +13,9 @@ const Navbar = () => {
 
   return (
     <header>
-      <Container className="h-[64px]" >
-        <nav className="fixed  h-[64px] bg-yellow px-[20px] w-full flex justify-between items-center navbar z-[999]"
-        >
-          {/* Sidebar */}
+      <Container className="h-[64px] relative" >
+        <nav className="fixed  h-[64px] bg-yellow px-[20px] w-full flex justify-between navbar z-[999]">
+             {/* Sidebar */}
           <div
             onClick={() => setToggle(!toggle)}
             className={`${!toggle ? "  translate-x-[-100%] transition-all duration-1000 " : "translate-x-[0] transition-all duration-1000 "
@@ -28,26 +27,22 @@ const Navbar = () => {
               <Links to="/contact" className="self-center mt-[46px]" icon="envelope" size="medium" type="button" children="Contact us" />
             </ul>
           </div>
-
-
+          <div className="sm:hidden flex flex-1  items-center">
+            <button
+              onClick={() => setToggle(!toggle)}
+            >{toggle ? <BsXLg className="stroke-1 text-[24px] text-red" /> : <FaBars className="text-[24px] text-red" />}</button>
+          </div>
           {/* Desktop Navigation */}
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             <NavLinks type='nav' />
+            <SocialIcons type='nav' />
           </ul>
-
           {/* Mobile Navigation */}
-          <div className="sm:hidden flex flex-1  items-center">
-
-            <button
-              onClick={() => setToggle(!toggle)}
-            >{toggle ? <BsXLg className="    stroke-1 text-[24px] text-red" /> : <FaBars className="text-[24px] text-red" />}</button>
-
-
-          </div>
-          {/* Logo */}
-          <Links to="/" className="md:self=start"><img className="width-[98px]" src={Logo} alt="Logo" /></Links>
+          <Links to="/" className="absolute right-[24px] w-[98px] md:left-[24px]"><img src={Logo} alt="Logo" /></Links>
 
         </nav>
+          {/* Logo */}
+    
       </Container>
     </header>
   );

@@ -38,7 +38,7 @@ const NavLinks = (props ) => {
     const { className, type } = props
     const [active, setActive] = useState("Home");
     const classes = clsx( 
-        type === "nav" && 'my-[20px] text-[20px] text-brown font-narrow font-bold inline-block',
+        type === "nav" && 'my-[20px] text-[20px] text-brown font-narrow font-bold inline-block md:px-[19px]',
         type === "footer" && 'font-regular mb-[15px] inline-block text-[16px] font-narrow text-white',
     )
     return (
