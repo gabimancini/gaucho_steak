@@ -22,7 +22,7 @@ const Services = () => {
                                     category={service.category}
                                     price={service.price}
                                     description={service.description}
-                                    src={service.src}
+                                    href={service.href}
                                     item={items.map((itemList) => {
                                         return (
                                             <li className="flex items-center text-[15px] font-narrow font-regular leading-[23px] mb-[15px] text-blue-dark">

@@ -10,7 +10,7 @@ const servicesData = [
             "30 guests maximum",
             "Free special sauces"
         ],
-        src: "/basic"
+        href: "/basic"
     },
     {
         category: "Regular",
@@ -23,7 +23,7 @@ const servicesData = [
             "30 guests maximum",
             "Free special sauces"
         ],
-        src: "/basic"
+        href: "/basic"
     },
     {
         category: "Premium",

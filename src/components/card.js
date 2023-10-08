@@ -3,7 +3,7 @@ import Link from "../elements/links";
 import Paragraph from "../elements/paragraph";
 import List from "../elements/list";
 const Card = (props) => {
-    let { category, price, description, item, src } = props;
+    let { category, price, description, item, href } = props;
 
     return (
         <div className="bg-white p-[40px] rounded-[8px] font-narrow md:flex-row">
@@ -15,7 +15,7 @@ const Card = (props) => {
             </div>
             <Paragraph type="card" children={description} className="mb-[26px] max-w-[190px]" />
             <List children={item} className="mb-[26px]"/>
-            <Link src={src} type="button" size="large" children="See Details" />
+            <Link to={href} type="button" size="large" children="See Details" />
         </div>
     )
 }
